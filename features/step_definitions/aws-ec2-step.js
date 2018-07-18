@@ -5,8 +5,6 @@ var {expect} = require('chai');
 const assert = require('assert');
 
 When(/^I create an AWS EC2 instance named "([^"]*)"$/, function (instanceName, callback) {
-    // Check whether AWS credentials exist
-    //assert.notEqual(this.ec2.secretAccessKey, undefined, "AWS Credential is missing");
 
     var params = {
         ImageId: 'ami-39f8215b', // amazon linux 2 AMI in ap-southeast-2
